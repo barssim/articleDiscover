@@ -1,0 +1,6 @@
+spring:
+ application:
+    name: articleDiscover
+    Desc: retrievs article data by articleNo
+
+
