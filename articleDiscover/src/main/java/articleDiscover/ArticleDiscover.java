@@ -7,7 +7,6 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
 
 @SpringBootApplication
 	public class ArticleDiscover  extends SpringBootServletInitializer {
-//	private static final Logger logger = LoggerFactory.getLogger(ArticleDiscover.class);
 
 	   @Override
 	   protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {

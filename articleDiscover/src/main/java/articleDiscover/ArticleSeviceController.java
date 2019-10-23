@@ -2,7 +2,8 @@ package articleDiscover;
 
 import java.util.HashMap;
 import java.util.Map;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,6 +14,7 @@ import model.Article;
 
 @RestController
 public class ArticleSeviceController {
+	private static final Logger logger = LoggerFactory.getLogger(ArticleDiscover.class);
 	private static Map<String, Article> ArticleRepo = new HashMap<>();
 	   static {	 
 
@@ -37,6 +39,7 @@ public class ArticleSeviceController {
 	   
 	   @RequestMapping("/articles/{artNo}")
 	   public ResponseEntity<Object> getProduct(@PathVariable("artNo") String artNo) {
+		  logger.info("retrievs Article by articleNo");
 	      Article article = ArticleRepo.get(artNo);
 		   return new ResponseEntity<>(article , HttpStatus.OK);
 	   }
