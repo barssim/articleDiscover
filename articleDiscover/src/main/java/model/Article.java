@@ -1,10 +1,10 @@
 package model;
 
 public class Article {
-	private String artNo;
+	private int artNo;
 	private String artName;
 	private String artDestination;
-	private String artPrice;
+	private int artPrice;
 	private String artTransportCost;
 	
 	public String getArtDestination() {
@@ -13,16 +13,16 @@ public class Article {
 	public void setArtDestination(String artDestination) {
 		this.artDestination = artDestination;
 	}
-	public String getArtPrice() {
+	public int getArtPrice() {
 		return artPrice;
 	}
-	public void setArtPrice(String artPrice) {
+	public void setArtPrice(int artPrice) {
 		this.artPrice = artPrice;
 	}
-	public String getArtNo() {
+	public int getArtNo() {
 		return artNo;
 	}
-	public void setArtNo(String artNo) {
+	public void setArtNo(int artNo) {
 		this.artNo = artNo;
 	}
 	public String getArtName() {
