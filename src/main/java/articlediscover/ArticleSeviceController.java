@@ -1,4 +1,4 @@
-package articleDiscover;
+package articlediscover;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -18,7 +18,7 @@ import models.ArticleBean;
 
 @RestController
 public class ArticleSeviceController {
-	private static final Logger logger = LoggerFactory.getLogger(ArticleDiscover.class);
+	private static final Logger logger = LoggerFactory.getLogger(ArticleSeviceController.class);
 	
 	Article article = new Article();
 	
