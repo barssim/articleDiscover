@@ -12,10 +12,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-        with:
-          ssh-key: SHA256:ms6Xxtf1yEd2R0PFPhsoS5ODiHlxS4s7c+4pNBDxHmg
-
-          submodules: true
+#        with:
+#          ssh-key: SHA256:ms6Xxtf1yEd2R0PFPhsoS5ODiHlxS4s7c+4pNBDxHmg
+#
+#          submodules: true
           
       - name: Setup JDK 8
         uses: actions/setup-java@v3
