@@ -21,6 +21,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           jav-version: 1.8
+          distribution: 'adopt'
          
       - name: Unit Tests   
         run: mvn -B test --file pom.xml
