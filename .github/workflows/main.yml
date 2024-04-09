@@ -13,7 +13,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
         with:
-          ssh-key: SHA256:ms6Xxtf1yEd2R0PFPhsoS5ODiHlxS4s7c+4pNBDxHmg
+          ssh-key: ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBAC7rcFxefKf35MYsb6noDNnpWvkWxyRnyUGk7KyxP7hv6hgtrvUmc/MnhQuInG9JcWBVMPoXPIpwCWJI7E6FOon9wEjsVh3t8ldnbcz95ZeCB5gxduqEQp4NjpLZ54psoUptZ0+66LnirS9y6Z64hkiA1LL4/t/ZDtFgnS45TY23VUGwg== barssim@github.com
+
           submodules: true
           
       - name: Setup JDK 8
