@@ -21,9 +21,12 @@ jobs:
           distribution: 'corretto'
           java-version: 17
           
-      - name: Set up local Maven repository
-        run: |
-          mkdir -p $HOME/.m2/repository
+      - name: Set up Maven
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'apache-maven'
+          java-version: 17
+          maven-version: '3.3.9'
          
       - name: Unit Tests   
         run: mvn -B test --file pom.xml -Dmaven.repo.local=$HOME/.m2/repository
