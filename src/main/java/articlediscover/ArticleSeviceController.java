@@ -4,6 +4,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.InvalidPropertiesFormatException;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -34,7 +35,7 @@ public class ArticleSeviceController {
 	      return art;
 		
 	}
-	   
+	   //call example:   http://localhost:8090/articles/555602
 	   @RequestMapping("/articles/{artNo}")
 	   public ResponseEntity<Object> getProduct(@PathVariable("artNo") int artNo)  {
 		  logger.info("retrievs Article by articleNo");
