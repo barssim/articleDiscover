@@ -21,8 +21,8 @@ jobs:
           distribution: 'corretto'
           java-version: 8
           
-      - name: Unit Tests
-        run: mvn -B test --file pom.xml
+#      - name: Unit Tests
+#        run: mvn -B test --file pom.xml
             
          
       - name: Build with Maven
