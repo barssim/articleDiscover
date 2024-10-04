@@ -1,4 +1,4 @@
-FROM tomcat:8.0
+FROM tomcat:9.0-jdk8-openjdk
 	
 ENV APP_DATA_FOLDER=/var/lib/articleDiscover
 ENV ARTICLE_DISCOVER_CONFIG=${APP_DATA_FOLDER}/config/
