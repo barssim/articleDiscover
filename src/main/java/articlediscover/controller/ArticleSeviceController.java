@@ -1,4 +1,4 @@
-package articlediscover;
+package articlediscover.controller;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import article.ArticleFacade;
-import model.Article;
+import articlediscover.model.Article;
 import models.ArticleBean;
 
 @RestController

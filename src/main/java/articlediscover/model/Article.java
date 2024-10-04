@@ -1,4 +1,4 @@
-package model;
+package articlediscover.model;
 
 public class Article {
 	private int artNo;
