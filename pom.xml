@@ -34,19 +34,23 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		<!-- <dependency> -->
-		<!-- <groupId>ma.solide</groupId> -->
-		<!-- <artifactId>solide</artifactId> -->
-		<!-- <version>0.0.1</version> -->
-		<!-- </dependency> -->
-
 		<dependency>
-			<groupId>myjars</groupId>
+			<groupId>ma.solide</groupId>
 			<artifactId>solide</artifactId>
-			<scope>system</scope>
 			<version>0.0.1</version>
-			<systemPath>${basedir}/libs/myjars/solide/0.0.1/solide-0.0.1.jar</systemPath>
 		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+		</dependency>
+
+		<!-- <dependency> -->
+		<!-- <groupId>myjars</groupId> -->
+		<!-- <artifactId>solide</artifactId> -->
+		<!-- <scope>system</scope> -->
+		<!-- <version>0.0.1</version> -->
+		<!-- <systemPath>${basedir}/libs/myjars/solide/0.0.1/solide-0.0.1.jar</systemPath> -->
+		<!-- </dependency> -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
