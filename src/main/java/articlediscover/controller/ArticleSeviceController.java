@@ -1,9 +1,6 @@
 package articlediscover.controller;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.sql.SQLException;
-import java.util.InvalidPropertiesFormatException;
+import java.util.Optional;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,13 +20,24 @@ public class ArticleSeviceController {
 
 	@Autowired
 	ArticleFinder articleFinder;
-
-	// call example: http://localhost:8090/articles/555602
+	
+	
+	// call example: http://localhost:8090/articles/555594
 	@RequestMapping("/articles/{artNo}")
-	public ResponseEntity<Object> getProduct(@PathVariable("artNo") int artNo) {
+	public ResponseEntity<Object> getProduct(@PathVariable("artNo") Integer artNo) {
 		logger.info("retrievs Article by articleNo");
-		Article article = articleFinder.getArticle(artNo);
-		return new ResponseEntity<>(article, HttpStatus.OK);
+		 Optional<Article> article = articleFinder.getArticle(artNo);
+		
+		if (artNo == null) {
+	        return new ResponseEntity<>("Article number cannot be null", HttpStatus.BAD_REQUEST);
+	    }
+
+	    article = articleFinder.getArticle(artNo);
+	    if (article == null) {
+	        return new ResponseEntity<>("Article not found", HttpStatus.NOT_FOUND);
+	    }
+
+	    return new ResponseEntity<>(article, HttpStatus.OK);
 	}
 
 }
