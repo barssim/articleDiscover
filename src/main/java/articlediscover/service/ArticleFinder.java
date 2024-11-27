@@ -1,5 +1,6 @@
 package articlediscover.service;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,4 +21,9 @@ public class ArticleFinder {
 		 Optional<Article> article = articleRepository.findById(artNo);
 		 return article;
 }
+	
+	public  List<Article> findAllArticles()
+	{
+		return articleRepository.findAll();
+	}
 }

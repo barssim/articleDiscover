@@ -18,11 +18,6 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "tb_article")
 public class Article {
-//	private int artNo;
-//	private String artName;
-//	private String artDestination;
-//	private int artPrice;
-//	private String artTransportCost;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
