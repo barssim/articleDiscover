@@ -10,5 +10,6 @@ import articlediscover.model.Article;
 public interface ArticleRepository extends JpaRepository<Article, Integer> {
 	Optional<Article> findById(Integer id);
 	List<Article> findAll();
+	List<Article> findByArticleOldNew(String articleOldNew);
 
 }

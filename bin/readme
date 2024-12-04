@@ -1,0 +1,6 @@
+https://www.baeldung.com/spring-boot-aws-lambda
+
+CI/CD:  https://www.youtube.com/watch?v=a5qkPEod9ng
+
+//run docker
+sudo docker run -p 8080:8080 -it --user root --name articlediscover_local articlediscover_local /bin/bash
