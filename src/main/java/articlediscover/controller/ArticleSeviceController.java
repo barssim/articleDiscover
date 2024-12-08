@@ -43,7 +43,7 @@ public class ArticleSeviceController {
 		return new ResponseEntity<>(article, HttpStatus.OK);
 	}
 
-	@CrossOrigin(origins = "http://localhost:3000")
+	@CrossOrigin(origins = "${origins}")
 	@RequestMapping("/articles")
 	public ResponseEntity<Object> getAllProducts() {
 		logger.info("retrievs all articles");
@@ -51,11 +51,19 @@ public class ArticleSeviceController {
 		return new ResponseEntity<Object>(articles, HttpStatus.OK);
 	}
 	
-	@CrossOrigin(origins = "http://localhost:3000") 
+	@CrossOrigin(origins = "${origins}")
 	@RequestMapping("/articles/newArticles")
 	public ResponseEntity<Object> getNewProducts() {
 		logger.info("retrievs all new articles");
 		List<Article> articles = articleFinder.findNewArticles();
+		return new ResponseEntity<Object>(articles, HttpStatus.OK);
+	}
+	
+	@CrossOrigin(origins = "${origins}")
+	@RequestMapping("/articles/oldArticles")
+	public ResponseEntity<Object> getOldProducts() {
+		logger.info("retrievs all new articles");
+		List<Article> articles = articleFinder.findOldArticles();
 		return new ResponseEntity<Object>(articles, HttpStatus.OK);
 	}
 }

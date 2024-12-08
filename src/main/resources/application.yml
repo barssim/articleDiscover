@@ -18,5 +18,5 @@ spring:
    properties:
      hibernate.dialect: org.hibernate.dialect.MySQL8Dialect
     
-
+origins: "http://localhost:3000"
 

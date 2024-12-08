@@ -31,4 +31,9 @@ public class ArticleFinder {
 	{
 		return articleRepository.findByArticleOldNew("New");
 	}
+	
+	public  List<Article> findOldArticles()
+	{
+		return articleRepository.findByArticleOldNew("old");
+	}
 }

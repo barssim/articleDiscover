@@ -9,5 +9,5 @@ COPY ./target/articleDiscover*.war /usr/local/tomcat/webapps/articleDiscover.war
 
 WORKDIR $APP_DATA_FOLDER
 
-EXPOSE 8080
+EXPOSE 3000
 ENTRYPOINT ["catalina.sh", "run"]
