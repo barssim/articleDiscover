@@ -1,4 +1,4 @@
-package articlediscover.controller;
+package ma.solide.articlediscover.controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import articlediscover.model.Article;
-import articlediscover.service.ArticleFinder;
+import ma.solide.articlediscover.model.Article;
+import ma.solide.articlediscover.service.ArticleFinder;
 
 @RestController
 public class ArticleSeviceController {
@@ -43,7 +43,6 @@ public class ArticleSeviceController {
 		return new ResponseEntity<>(article, HttpStatus.OK);
 	}
 
-	@CrossOrigin(origins = "${origins}")
 	@RequestMapping("/articles")
 	public ResponseEntity<Object> getAllProducts() {
 		logger.info("retrievs all articles");
@@ -51,7 +50,6 @@ public class ArticleSeviceController {
 		return new ResponseEntity<Object>(articles, HttpStatus.OK);
 	}
 	
-	@CrossOrigin(origins = "${origins}")
 	@RequestMapping("/articles/newArticles")
 	public ResponseEntity<Object> getNewProducts() {
 		logger.info("retrievs all new articles");
@@ -59,7 +57,6 @@ public class ArticleSeviceController {
 		return new ResponseEntity<Object>(articles, HttpStatus.OK);
 	}
 	
-	@CrossOrigin(origins = "${origins}")
 	@RequestMapping("/articles/oldArticles")
 	public ResponseEntity<Object> getOldProducts() {
 		logger.info("retrievs all new articles");

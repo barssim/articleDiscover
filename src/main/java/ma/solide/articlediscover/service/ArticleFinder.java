@@ -1,4 +1,4 @@
-package articlediscover.service;
+package ma.solide.articlediscover.service;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import articlediscover.model.Article;
-import articlediscover.repository.ArticleRepository;
+import ma.solide.articlediscover.model.Article;
+import ma.solide.articlediscover.repository.ArticleRepository;
 
 @Service
 public class ArticleFinder {

@@ -1,11 +1,11 @@
-package articlediscover.repository;
+package ma.solide.articlediscover.repository;
 
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import articlediscover.model.Article;
+import ma.solide.articlediscover.model.Article;
 
 public interface ArticleRepository extends JpaRepository<Article, Integer> {
 	Optional<Article> findById(Integer id);

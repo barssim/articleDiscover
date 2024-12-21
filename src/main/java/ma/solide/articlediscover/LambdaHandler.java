@@ -1,4 +1,4 @@
-package articlediscover;
+package ma.solide.articlediscover;
 import javax.ws.rs.core.Application;
 
 import com.amazonaws.serverless.exceptions.ContainerInitializationException;
