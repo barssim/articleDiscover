@@ -5,7 +5,7 @@
 	<groupId>ma.solide</groupId>
 	<artifactId>articlediscover</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 	<description>retrieves article data by articleNo
 </description>
 	<parent>
@@ -18,8 +18,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>17</java.version>
-		<!--		<start-class>articleDiscover.ArticleDiscover</start-class>-->
-		<tomcat.version>8.5.99</tomcat.version>
+	
 	</properties>
 	<repositories>
 		<repository>
@@ -52,11 +51,7 @@
 			<artifactId>tomcat-embed-core</artifactId>
 		</dependency>
 
-		<dependency>
-			<groupId>com.amazonaws.serverless</groupId>
-			<artifactId>aws-serverless-java-container-springboot2</artifactId>
-			<version>1.9.4</version>
-		</dependency>
+		
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
