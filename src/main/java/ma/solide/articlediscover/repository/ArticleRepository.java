@@ -1,6 +1,7 @@
 package ma.solide.articlediscover.repository;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
@@ -11,7 +12,7 @@ import ma.solide.articlediscover.model.Article;
 
 public interface ArticleRepository extends JpaRepository<Article, Long>, JpaSpecificationExecutor<Article> {
 
-
+	Optional<Article> findByArticleno(Integer id);
 	List<Article> findAll();
 
 	List<Article> findByOldNew(String oldNew);
