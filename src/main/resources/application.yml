@@ -7,7 +7,7 @@ spring:
     Desc: retrievs article data by articleNo
     
  datasource:
-   url: jdbc:mysql://localhost:3306/tola
+   url: jdbc:mysql://mysql-container:3306/tola
    username: root
    password: Tasnim2017#
    driver-class-name: com.mysql.cj.jdbc.Driver
